@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            
+            
+            <div class="col-sm-12">
+                <div class="product-details"><!--product-details-->
+                    <div class="col-sm-7">
+                        
+                        
+
+                            <div class="w3-content" style="max-width:1200px">
+                              <img class="mySlides" src="{% static 'images/product-details/similar1.jpg' %}" style="width:100%;display:none">
+                              <img class="mySlides" src="{% static 'images/product-details/similar2.jpg' %}" style="width:100%">
+                              <img class="mySlides" src="{% static 'images/product-details/similar3.jpg' %}" style="width:100%;display:none">
+
+                              <div class="w3-row-padding w3-section">
+                                <div class="w3-col s4">
+                                  <img class="demo w3-opacity w3-hover-opacity-off" src="{% static 'images/product-details/similar1.jpg' %}" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                                </div>
+                                <div class="w3-col s4">
+                                  <img class="demo w3-opacity w3-hover-opacity-off" src="{% static 'images/product-details/similar2.jpg' %}" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                                </div>
+                                <div class="w3-col s4">
+                                  <img class="demo w3-opacity w3-hover-opacity-off" src="{% static 'images/product-details/similar3.jpg' %}" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                                </div>
+                              </div>
+                            </div>
+
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="product-information"><!--/product-information-->
+                            
+                            <h2>CNG Repairs</h2>
+                            <p>CNG is a safe and low cost fuel. So get your CNG Kit Installed today and take care of your car’s CNG Repairs.</p>
+                            <p><b>Availability:</b>24X7</p>
+                            <p><b>Condition:</b> New</p>
+                            <p><b>Brand:</b> BuddyWheels</p>
+                            <span>			
+                                <button type="button" class="btn btn-fefault cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                    BOOK NOW
+                                </button>
+                            </span>
+                            
+                        </div><!--/product-information-->
+                    </div>
+                </div><!--/product-details-->
+                
+
+                <!-- Popular Listing -->
+                <div class="category-tab shop-details-tab"><!--category-tab-->
+                    <div class="col-sm-12">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Popular_Listing" data-toggle="tab">Popular Garage Listing</a></li>
+                            
+                            
+                            <li ><a href="#reviews" data-toggle="tab">Reviews (5)</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="Popular_Listing" >
+                            <div class="col-sm-3">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/product-details/company1.jpg" alt="" />
+                                            <h2>Auto Shield</h2>
+                                            <p>We are an Independent Aftermarket Garage who have a great deal of experience in serving a variety of car brands, especially European and American car brands. We provide all types of services like Electrical Job, Mechanical Job, to keep your car free from all problems and to make it look fresh and new.</p>
+                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/product-details/company2.jpg" alt="" />
+                                            <h2>JAIPUR CARS&BIKES</h2>
+                                            <p>We are an Independent Aftermarket Garage who have a great deal of experience in serving a variety of car brands, especially European and American car brands. We provide all types of services like Electrical Job, Mechanical Job, to keep your car free from all problems and to make it look fresh and new.</p>
+                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/product-details/company3.jpg" alt="" />
+                                            <h2>New German Motors</h2>
+                                            <p>We are an Independent Aftermarket Garage who have a great deal of experience in serving a variety of car brands, especially European and American car brands. We provide all types of services like Electrical Job, Mechanical Job, to keep your car free from all problems and to make it look fresh and new.</p>
+                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/product-details/company4.jpg" alt="" />
+                                            <h2>Tambi AutoWorld</h2>
+                                            <p>We are an Independent Aftermarket Garage who have a great deal of experience in serving a variety of car brands, especially European and American car brands. We provide all types of services like Electrical Job, Mechanical Job, to keep your car free from all problems and to make it look fresh and new.</p>
+                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        
+                        
+                        <div class="tab-pane fade" id="reviews" >
+                            <div class="col-sm-12">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-user"></i>sachin</a></li>
+                                    <li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
+                                    <li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2020</a></li>
+                                </ul>
+                                <p><b>Write Your Review</b></p>
+                                
+                                <form action="#">
+                                    <span>
+                                        <input type="text" placeholder="Your Name"/>
+                                        <input type="email" placeholder="Email Address"/>
+                                    </span>
+                                    <textarea name="" ></textarea>
+                                    <b>Rating: </b> <img src="images/product-details/rating.png" alt="" />
+                                    <button type="button" class="btn btn-default pull-right">
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                </div><!--/category-tab-->
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
